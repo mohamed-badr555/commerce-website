@@ -18,8 +18,8 @@ body {
 .container {
   max-width: 1300px;
 
-  margin-left: 50px;
-  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .navbar {
   display: flex;
@@ -104,9 +104,9 @@ p {
 
 .small-container {
   max-width: 1080px;
-  /* margin: auto; */
-  margin-right: 80px;
-  margin-left: 80px;
+  margin: auto;
+  padding-right: 80px;
+  padding-left: 80px;
 }
 .col-4 {
   flex-basis: 25%;
