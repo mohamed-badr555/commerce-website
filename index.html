@@ -33,11 +33,11 @@
     </div> 
     <div class="row">
         <div class="col-2">
-            <h1>Give Your Workout<br> A New Style!</h1>
+              <h1 class="animation-type1">Give Your Workout </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Asperiores id cumque alias temporibus eveniet.</p>
             <a href="" class="btn">Explore Now &#8594;</a>
         </div>
-        <div class="col-2">
+        <div class="col-2 img1">
             <img src="images/image1.png" >
         </div>
     </div>
@@ -362,6 +362,31 @@
             menuitems.style.maxHeight = "0px";
         }
     }
+</script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    /* ===Scroll Reveal animation*/
+
+ScrollReveal({
+    reset:true,
+    distance:'80px',
+    duration:2000,
+    origin:'top',
+});
+/*scroll Home */
+
+ScrollReveal().reveal('.img1',{delay:400,origin:'right'})
+
+/*scroll  three element*/
+ScrollReveal().reveal(".col-3",{interval:200,delay:200})
+
+
+/*scroll  four element*/
+ScrollReveal().reveal(".col-4",{interval:200,delay:100})
+
+
+/*scroll  contact*/
+
 </script>
 </body>
 </html>
