@@ -68,7 +68,24 @@ p {
   line-height: 60px;
   margin: 25px 0;
 }
-
+@media (min-width:1050px){
+.col-2 h1.animation-type1{
+ animation: type1 3s steps(17);
+ -webkit-animation: type1 3s steps(17);
+ overflow: hidden;
+ white-space: nowrap;
+ font-family: consolas;
+ /* border-right: 4px solid black; */
+ width: 17ch;
+}
+@keyframes type1 {
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 17ch;
+  }
+}
 .btn {
   display: inline-block;
   background-color: #ff523b;
