@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Ecommerce Website</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+        <ul id="menuitems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="product-details.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Account</a></li>
+        </ul>
+    </nav>
+    <img src="images/cart.png" width="30px" height="30px">
+    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div> 
+   
+   </div>
+<h2 class="title">Contact Us</h2>
+<!-- ---------contact ust------------>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27621.14810891739!2d31.285759105524996!3d30.075751318218646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1630054902282!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+   <section class="contact-us">
+       <div class="row">
+           <div class="contact-col">
+               <div>
+                <i class="fas fa-phone-alt"></i>
+        <span>
+            <h5>XYZ Road , ABC Building</h5>
+            <p>Bangalore, Karnataka, IN </p>
+        </span>
+       </div>
+               <div>
+                <i class="fas fa-phone-alt"></i>
+        <span>
+            <h5>+1 01234567898</h5>
+            <p>Monday to Saturday,10Am to 6Pm</p>
+        </span>
+       </div>
+               <div>
+                <i class="far fa-envelope"></i>
+        <span>
+            <h5>info@easytutourailspro.com</h5>
+            <p>Email us Your quary</p>
+        </span>
+       </div>
+       </div>
+       <div class="contact-col">
+           <form action="">
+               <input type="text" placeholder="Enter Your Name" required>
+               <input type="email" placeholder="Enter email address" required>
+               <input type="text" placeholder="Enter Your subject" required>
+               <textarea  rows="8" placeholder="Message" required></textarea>
+               <button type="submit" class="hero-btn red-btn">Send Message</button>
+           </form>
+       </div>
+       </div>
+   </section>
+
+<!-- ------------------------footer------------------------------ -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png" alt="">
+                    <img src="images/play-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+ 
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instgram</li>
+                    <li>Youtub</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    var  menuitems = document.getElementById("menuitems")
+    menuitems.style.maxHeight = "0px";
+    function  menutoggle(){
+        if (    menuitems.style.maxHeight == "0px") {
+            menuitems.style.maxHeight = "200px";
+        }
+         else 
+        {
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    /* ===Scroll Reveal animation*/
+
+ScrollReveal({
+    reset:true,
+    distance:'80px',
+    duration:2000,
+    origin:'top',
+});
+
+
+
+/*scroll  four element*/
+ScrollReveal().reveal(".col-4",{interval:200,delay:200})
+
+
+
+
+</script>
+</body>
+</html>
