@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products - Ecommerce Website</title>
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +24,7 @@
         <ul id="menuitems">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
-             <li><a href="product-details.html">Cart</a></li>
+            <li><a href="product-details.html">Cart</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html">Account</a></li>
         </ul>
@@ -41,25 +42,73 @@
                 </div>
                <div class="col-2"> 
                    <div class="form-container">
-                    <div class="form-btn">
-                        <span onclick="login()">Login</span>
-                        <span onclick="register()">Register</span>
-                        <hr id="Indicator">
-                    </div>
-
-                    <form id="LoginForm"> 
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="">Forget Passwoed</a>
+                       <div class="header">
+                    <h2>Log in</h2>
+                </div>
+            
+                    <form id="form" class="form" action="#"> 
+                        <div class="form-control">
+                            <label for="firstname">First Name</label>
+                            <input type="text" placeholder="mohamedadel" id="firstname" >
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" placeholder="mohamedadel" id="lastname">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="mohamed@gmail.com" id="email">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="phone">Mobile Phone</label>
+                            <input type="tel" placeholder="0111-148-1204" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="adress">Adress</label>
+                            <input type="text" placeholder="4-streat Ahamed Helmy" id="adress">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control gender">
+                            <label for="gender" > Select you gender</label>
+                        <select name="gender" required>
+                            <option value="">None</option>
+                            <option value="male" >Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">other</option>
+                        </select>
+                        </div>
+                        <div class="form-control">
+                            <label for="pass">Password</label>
+                            <input type="password" placeholder="Password" id="pass">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small>Error message</small>
+                        </div>
+                            <div class="form-control">
+                            <label for="check">Repeat Password</label>
+                            <input type="password" placeholder="Password check" id="check">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <small>Error message</small>
+                        </div>
+                        <button  class="btn" >Login</button>
+                        <a href="" class="forget" >Forget Passwoed</a>
                     </form>
-                    <form id="RegForm"> 
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Register</button>
-                       
-                    </form>
+                   
 
 
                    </div>
@@ -125,36 +174,7 @@
         }
     }
 </script>
-<!-- -------------------js for toggle form --------------------- -->
 
-<script>
-    var LoginForm = document.getElementById("LoginForm") 
-    var RegForm = document.getElementById("RegForm");
-    var Indicator = document.getElementById("Indicator")
-
-    function register(){
-
-        RegForm.style.transform = "translateX(0px)";
-        LoginForm.style.transform = "translateX(0px)";
-        Indicator.style.transform = "translateX(100px)";
-
-    }
-    function login(){
-
-        RegForm.style.transform = "translateX(250px)";
-        LoginForm.style.transform = "translateX(250px)";
-        Indicator.style.transform = "translateX(0px)";
-
-    }
-
-
-
-
-
-
-
-
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
