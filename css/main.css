@@ -738,3 +738,11 @@ box-sizing: border-box;
 .hero-btn:hover{  
  background-color: #563434;
 }
+@media (max-width: 772px) {
+  .contact-col{
+    flex-basis:100%;
+  }
+  .contact-col input , .contact-col textarea{
+    width:100%;
+  }
+}
